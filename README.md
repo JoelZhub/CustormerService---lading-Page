@@ -20,7 +20,7 @@ La plataforma propuesta organiza la atención a clientes mediante tickets, segui
 
 # Tecnologías usadas (para prototipo/landing page)
 <ul>
-<li>HTML / CSS / TailwindCSS</li>
+<li>HTML / CSS / Js</li>
 <li>JavaScript (interactividad básica, no funcional)</li>
 <li>Figma</li>
 </ul>

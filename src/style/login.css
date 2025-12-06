@@ -94,7 +94,7 @@
     position: absolute;
     right: 10px;
     top: 60%;
-    transform: translateY(-6    0%);
+    transform: translateY(-60%);
     color: #000; 
     cursor: pointer; 
     font-size: 2em;
@@ -174,4 +174,34 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .container .login-inputs .btn button:hover{
     transform: translateY(-5px);
       box-shadow: 0.6px 0.5px 0.6px 0.8px #000;
+}
+
+.container .login-inputs .message-error {
+    color: #ff0000;
+    font-size: 16px;
+    margin-top: 5px;
+    height: 16px; 
+    display: block;
+    font-weight: 500;
+}
+
+
+.container .login-inputs .input-userName.error input, 
+.container .login-inputs .input-Password.error input {
+    border-bottom: 2px solid #ff0000;
+}
+
+.container .login-inputs .input-userName.error i, 
+.container .login-inputs .input-Password.error i {
+    color: #ff0000; 
+}
+
+.container .login-inputs .input-userName.success input, 
+.container .login-inputs .input-Password.success input {
+    border-bottom: 2px solid #00c04b; 
+}
+
+.container .login-inputs .input-userName.success i, 
+.container .login-inputs .input-Password.success i {
+    color: #00c04b; 
 }

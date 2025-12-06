@@ -5,7 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const tableTitle = document.getElementById('table-title');
     const tableWrapper = document.querySelector('.table-wrapper');
     const customScrollbar = document.querySelector('.custom-scrollbar');
-    
+    const nombreUsuario = localStorage.getItem('currentUser');
+    const nombreUserChange = document.querySelector('#name');
+
+    nombreUserChange.textContent = 'Mr.'+ nombreUsuario;
+
+
     const tableData = {
         'tickets-widget': [
             { num: 'E-12', type: 'Soporte', customer: 'Juan', state: 'Pendiente', date: '05/12/2025 9:33 A.M.', time: '5:00 m' },

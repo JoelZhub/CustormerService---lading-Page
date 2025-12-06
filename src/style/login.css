@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inika:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+
+    padding:  0;
+    margin: 0;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    perspective:600px;
+    
+   
+}
+
+
+.container{
+    transform: translateZ(-100px);
+    overflow: hidden;
+    display: flex;
+    max-width: 1343px;
+    height: 700px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 3px 5px 3px 5px rgba(0, 0, 0, 25%);
+    background-color: #ffffff;
+}
+.container .info{
+    width: 672px; 
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+   background-color: #8D7EB8;
+   border-radius: 20px 0 0 20px;
+}
+
+.info .info-login .img-login{
+ margin-top: -60px;
+}
+.info .info-login .text-info-login{
+    width: 471px;
+    height: 400px;
+    padding-left: 30px;
+    margin-top:-100px;
+    color: #fff;
+}
+.info .info-login .text-info-login h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.info .info-login .text-info-login p{
+    line-height: 29px;
+    font-size: 20px;   
+    width: 555px; 
+    font-weight: 100;
+}
+.container .login-inputs{
+    width: 672px; 
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    float: right;
+    padding: 40px 40px;
+}
+.container .login-inputs .title{
+    text-align: center;
+    width: 417px;
+    font-size: 65px;
+    font-weight: bold;
+    height: 125px;
+    margin-bottom: 80px;
+}
+.container .login-inputs .title  h2{
+    text-align: center;
+}
+.container .login-inputs .input-userName, .input-Password{
+    position: relative;
+}
+.container .login-inputs .input-userName input, .input-Password input{
+    padding-right: 35px; 
+    width: 100%;
+      background: transparent;
+    border: none;
+    height: 49px;
+    outline: none;
+    font-size: 22px;
+    border-bottom: 1px solid #1E1E1E;   
+}
+
+.container .login-inputs .input-userName i, .input-Password i {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-6    0%);
+    color: #000; 
+    cursor: pointer; 
+    font-size: 2em;
+}
+
+.container .login-inputs .input-userName{
+    display: flex;
+    width: 528px;
+    height: 100px;
+    line-height: 40px;
+    flex-direction: column;
+}
+.container .login-inputs .input-userName label{
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 50px;
+}
+/* .container .login-inputs .input-userName input{
+    background: transparent;
+    border: none;
+    height: 49px;
+    outline: none;
+
+    border-bottom: 1px solid #1E1E1E;
+} */
+
+.container .login-inputs .input-userName input::placeholder{
+    color: rgba(30, 30, 30, 19%);
+     font-size: 22px;
+}
+.container .login-inputs .input-Password{
+     display: flex;
+    width: 528px;
+    height: 100px;
+    margin-top: 40px;
+    line-height: 40px;
+    flex-direction: column;
+}
+
+.container .login-inputs .input-Password label{
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 50px;
+}
+/* .container .login-inputs .input-Password input{
+    background: transparent;
+    border: none;
+    height: 49px;
+    outline: none;
+    border-bottom: 1px solid #1E1E1E;
+} */
+
+.container .login-inputs .input-Password input::placeholder{
+    color: rgba(30, 30, 30, 19%);
+    font-size: 22px;
+}
+.container .login-inputs .btn{
+    margin-top: 30px;
+    width: 246px;
+    height: 65px;
+}
+.container .login-inputs .btn button{
+    border: none;
+    color: #fff;
+    width: 246px;
+    height: 65px;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: #1E1E1E;
+    background-color: 25px;
+  
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.container .login-inputs .btn button:hover{
+    transform: translateY(-5px);
+      box-shadow: 0.6px 0.5px 0.6px 0.8px #000;
+}

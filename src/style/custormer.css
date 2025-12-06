@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inika:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+
+    padding:  0;
+    margin: 0;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    perspective:600px;
+   
+}
+.container{
+     transform: translateZ(-50px);
+    overflow: hidden;
+    padding: 0;
+}
+.container .title{
+    width: 550px;
+    height: 100px;
+}
+
+.container .title h3{
+     font-size: 50px;
+     font-weight: bold;
+}   
+
+.container .img-banner {
+    background-size: cover;
+    width: 100%;
+    height: 606px;
+    border-radius: 40px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+}
+.container .info-text{
+    background-color: brown;
+    position: absolute;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css" integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/custormerTicket.css">
+    <title>Customer Service</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <section class="info-ticket">
+            <div class="title-info">
+                <h3>We’ re here to help you</h3>
+                <h2><span> Tell us</span> about your problem and we'll get back to you shortly.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis urna non metus fermentum, vel luctus elit molestie. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis urna non metus fermentum, vel luctus elit molestie. </p>
+                <div class="info-contact">
+                        <div class="info-widget email-containt">
+                            <div class="icon-email">
+                              <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="text" >
+                                <p>E-mail</p>
+                                <p>custormeservice@email.com</p>
+                            </div>
+                        </div>
+                        <div class="info-widget phone-containt">
+                            <div class="icon-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="text">
+                                <p>Phone Number</p>
+                                <p>+809 - 372 - 1727</p>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="form-ticket">
+                <form action="" method="post">
+                    <div class="input-Name">
+                        <label for="Name">Name</label>
+                        <input type="text" placeholder="Juan Perez" maxlength="30" minlength="2">
+                        </div>
+                        <div class="input-Contact">
+                            <label for="Contact">Contact</label>
+                            <input type="text" placeholder="809-288-2837" maxlength="30" minlength="2">
+                        </div>
+
+                        <div class="input-typeRequest">
+                            <label for="TypeRequest">Type of Request</label>
+                            <select name="select" id="" >
+                                <option value="" disabled selected>Select</option>
+                                <option value="Consultation">Consultation</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Technical problem">Technical problem</option>
+                                <option value="Request for information">Request for information</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input-description">
+                            <label for="Description">Description</label>
+                                <textarea name="description" id="" cols="50" rows="5" placeholder="Write your message"></textarea>
+                        </div>
+                        <div class="btn">
+                                <button type="button" id="getSolution" >
+                                     <i class="fa-solid fa-arrow-down"></i>
+                                    Get a Solution
+                                </button>
+                        </div>
+                </form>
+        </section>
+    </div>
+    
+</body>
+</html>

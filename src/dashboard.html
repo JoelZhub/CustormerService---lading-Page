@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Customer Service</title>
+</head>
+<body>
+    <div class="container">
+     <nav class="menu">
+    <ul id="main-menu">
+        <li class="active" data-target="tickets-widget" data-title="Recent Tickets"><a href="dashboard.html" data-menu="Dashboard">Dashboard</a></li> 
+        <li data-target="complaints-widget" data-title="Recent Complaints"><a href="dashboard.html?tab=complaints" data-menu="Complaints">Complaints</a></li>
+        <li data-target="suggestions-widget" data-title="Recent Suggestions"><a href="dashboard.html?tab=suggestions" data-menu="Suggestions">Suggestions</a></li>
+        <li><a href="reports.html">Reports</a></li>
+    </ul>
+       <div class="btn">
+        <button type="button">Administration</button>
+    </div>
+    </nav>
+
+ 
+
+        <div class="banner-container">
+            <div class="banner">
+                <div class="text-welcome">
+                    <h3>Welcome Back</h3>
+                    <p id="name"></p> 
+                </div>
+                <div class="img-banner">
+                    <div class="btn-left">
+                        <img src="img/img1.png" alt="">
+                    </div>
+                    <div class="img"></div>
+                    <div class="btn-right">
+                        <img src="img/im2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="widgets-container">
+            <div class="widgets active" id="tickets-widget">
+                <div class="img-info">
+                    <img src="img/widget1.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Tickets</p>
+                    <p class="conteo">25</p>
+                </div>
+            </div>
+            <div class="widgets" id="suggestions-widget">
+                <div class="img-info">
+                    <img width="116px" height="116px" src="img/widget2.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Suggestions</p>
+                    <p class="conteo">8</p>
+                </div>
+            </div>
+            <div class="widgets" id="complaints-widget">
+                <div class="img-info">
+                    <img src="img/widget3.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Complaints</p>
+                    <p class="conteo">12</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="recent-tickets-section">
+            <h3 id="table-title">Recent Tickets</h3> 
+            <div class="table-wrapper">
+                <table class="tickets-table">
+                    <thead>
+                        <tr>
+                            <th># Num</th>
+                            <th>Type</th>
+                            <th>Customer</th>
+                            <th>State</th>
+                            <th>Creation Date</th>
+                            <th>Time elapsed</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tickets-table-body">
+                        </tbody>
+                </table>
+                <span class="custom-scrollbar"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/dahsboard.js"></script>
+</body>
+</html>

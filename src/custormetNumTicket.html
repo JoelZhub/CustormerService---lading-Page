@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css" integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/custormetNumTicket.css">
+    <title>Custormet Service</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <section class="info-text">
+                <div class="text">
+                    <h3><span>We'll be</span> with you shortly. Please have a seat.</h3>
+                    <p>Remember to print or take a photo of your ticket number.</p>
+                </div>
+        </section>
+
+        <section class="numTicket">
+                <h3>Num.Ticket</h3>
+                <p id="num"></p>
+                <p id="box"></p>
+        </section>
+            
+    </div>
+
+    <script >
+
+        function generarCodigos() {
+ 
+    const letra = String.fromCharCode(65 + Math.floor(Math.random() * 26)); 
+
+    const numero = String(Math.floor(Math.random() * 100)).padStart(2, "0"); 
+
+    const codigoNum = `#${letra}-${numero}`;
+
+    document.getElementById("num").textContent = codigoNum;
+
+   
+        const boxNum = Math.floor(Math.random() * 12) + 1; 
+        const codigoBox = `BOX ${boxNum}`;
+
+        document.getElementById("box").textContent = codigoBox;
+    }
+
+
+    generarCodigos();
+    </script>    
+</body>
+</html>

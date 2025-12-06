@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Inika:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+
+    padding:  0;
+    margin: 0;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    perspective:600px;
+    
+   
+}
+.container{
+    transform: translateZ(-100px);
+    overflow: hidden;
+    display: flex;
+    max-width: 1343px;
+    height: 700px;
+    padding: 0;
+    gap: 60px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 3px 5px 3px 5px rgba(0, 0, 0, 25%);
+    background-color: #ffffff;
+}
+
+.container .info-text{
+    padding: 20px 30px;
+    margin-top: 100px;
+    width: 616px;
+    height: 390px;
+}
+
+.container .info-text .text  h3{
+    width: 616px;
+    height: 200px;
+    
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.container .info-text .text  h3 > span{
+    font-weight: bold;
+}
+.container .info-text .text p{
+    font-size: 35px;
+    margin-top: 20px;
+    width: 657px;
+    line-height: 55px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+.container .numTicket{
+    background-color: rgba(30, 30, 30, 81%);
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 100px;
+    width: 516px;
+    height: 500px;
+}
+.container .numTicket h3{
+    margin-bottom: 20px;
+}
+
+.container .numTicket p {
+    margin-bottom: 20px;
+    
+}
